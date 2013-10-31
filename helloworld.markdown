@@ -10,3 +10,8 @@ Hello world challenge
 - Clojure
 - Scala
 - Simula
+- COBOL
+- ALGOL
+- Prolog
+- Ocaml
+- Erlang
