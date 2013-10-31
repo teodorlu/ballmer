@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="fs" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../bin/Debug/project" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-std=c++0x" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="../../include/" />
+					<Add directory="../../ext/" />
+					<Add directory="C:/Program Files/SFML/include" />
+					<Add directory="C:/Program Files/TTL/include" />
+					<Add directory="../../ext/Box2D/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lopengl32" />
+					<Add library="C:\Program Files\SFML\lib\libsfml-audio-d.a" />
+					<Add library="C:\Program Files\SFML\lib\libsfml-graphics-d.a" />
+					<Add library="C:\Program Files\SFML\lib\libsfml-main-d.a" />
+					<Add library="C:\Program Files\SFML\lib\libsfml-network-d.a" />
+					<Add library="C:\Program Files\SFML\lib\libsfml-system-d.a" />
+					<Add library="C:\Program Files\SFML\lib\libsfml-window-d.a" />
+					<Add library="C:\Program Files\TTL\lib\libttl-d.a" />
+					<Add directory="../../ext/" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../../bin/Release/project" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-std=c++11" />
+					<Add option="-std=c++0x" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add directory="../../include/" />
+					<Add directory="../../ext/" />
+					<Add directory="C:/Program Files/SFML/include" />
+					<Add directory="C:/Program Files/TTL/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="C:\Program Files\SFML\lib\libsfml-audio.a" />
+					<Add library="C:\Program Files\SFML\lib\libsfml-graphics.a" />
+					<Add library="C:\Program Files\SFML\lib\libsfml-main.a" />
+					<Add library="C:\Program Files\SFML\lib\libsfml-network.a" />
+					<Add library="C:\Program Files\SFML\lib\libsfml-system.a" />
+					<Add library="C:\Program Files\SFML\lib\libsfml-window.a" />
+					<Add library="C:\Program Files\TTL\lib\libttl.a" />
+					<Add directory="../../ext/" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../../include/Main/Buffered.hpp" />
+		<Unit filename="../../include/Main/Glocal.hpp" />
+		<Unit filename="../../include/Main/Main.hpp" />
+		<Unit filename="../../src/Main/Main.cpp" />
+		<Unit filename="../../src/Main/computeLogic.cpp" />
+		<Unit filename="../../src/Main/delegateInput.cpp" />
+		<Unit filename="../../src/Main/delegateLogic.cpp" />
+		<Unit filename="../../src/Main/delegateRender.cpp" />
+		<Unit filename="../../src/Main/postprocessLogic.cpp" />
+		<Unit filename="../../src/Main/preprocessLogic.cpp" />
+		<Unit filename="../../src/Main/render.cpp" />
+		<Unit filename="../../src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
