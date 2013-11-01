@@ -1,8 +1,9 @@
 evaluate :: Num a => [String] -> [a]
-evaluate ("add":xs) = ((read h1) + (read h2)):evaluate t
-	where (h1:h2:t) = evaluate xs
+evaluate ("add":h1:h2:t) = ((read h1) + (read h2)):evaluate t
 
 evaluate xs = [5, 5]
+
+
 
 worker = do
 	input <- getLine
