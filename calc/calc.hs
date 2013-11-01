@@ -1,6 +1,6 @@
 evaluate :: Num a => [String] -> [a]
-evaluate ("add":xs) = h + t
-	where rest@(h:t) = evaluate xs
+evaluate ("add":xs) = ((read h1) + (read h2)):evaluate t
+	where (h1:h2:t) = evaluate xs
 
 evaluate xs = [5, 5]
 
