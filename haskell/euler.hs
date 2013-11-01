@@ -1,8 +1,8 @@
 
 
 main = do
-	content <- getLine
-	putStrLn $ nice content
+	content <- readFile "words.txt"
+	putStrLn $ show $ words $ nice content
 
 nice c = (filter okay) . (map repl) $ c
 
