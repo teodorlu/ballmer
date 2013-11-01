@@ -1,12 +1,8 @@
 
 
-main = do
-	content <- readFile "words.txt"
-	putStrLn $ show $ words $ nice content
+main = putStrLn $ show $ words $ nice "\"Test\",\"Test2\""
 
-nice c = (filter okay) . (map repl) $ c
+nice c = filter (/='"') $ map repl c
 
-okay '"' = False
-okay  s  = True
 repl ',' = ' '
 repl  s  =  s
