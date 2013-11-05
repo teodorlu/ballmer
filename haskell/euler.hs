@@ -10,6 +10,8 @@ nice c = filter (/='"') $ map repl c
 repl ',' = ' '
 repl  s  =  s
 
+repl = ' ' if 
+
 triangle n = n * (n-1) `quot` 2
 
 isTriangleNumR n i
